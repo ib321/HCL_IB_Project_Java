@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+    
+</head>
+	<!---Fill Code Here-->
+    <body>
+        <script>
+        
+        let billnum = prompt("Enter the Bill: ");
+        let cc = prompt("Enter your credit card number");
+        var today= new Date();
+        var n=new Date();
+        n.setDate(15);
+     
+        if(today.getDate()>n.getDate())
+        {   var no=today.getDate()-n.getDate();
+            if(no>0)
+            {
+                var bill=(Number(billnum)+Number(no*50));
+                alert("your Bill is With Fine is ="+bill);
+            }
+
+          
+            
+        }
+        else{
+            alert("good to go without fine\nYour Bill="+billnum);
+        }
+
+
+</script>
+    </body>
+
+
+</html>
+  <!-- alert(n.getDate());
+        alert(today.getDate())-->
